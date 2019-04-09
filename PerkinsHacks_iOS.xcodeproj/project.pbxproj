@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97BA5F13CD3C91B74FADDB7E /* Pods_PerkinsHacks_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9CC4397E74B090B4B1DF88E /* Pods_PerkinsHacks_iOS.framework */; };
 		AAF2158620B6079A00F0529E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF2158520B6079A00F0529E /* AppDelegate.swift */; };
 		AAF2158820B6079A00F0529E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF2158720B6079A00F0529E /* ViewController.swift */; };
 		AAF2158B20B6079A00F0529E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF2158920B6079A00F0529E /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F74E886B7FAB66F4AAAB7F2 /* Pods-PerkinsHacks_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerkinsHacks_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PerkinsHacks_iOS/Pods-PerkinsHacks_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		AAF2158220B6079A00F0529E /* PerkinsHacks_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerkinsHacks_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF2158520B6079A00F0529E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAF2158720B6079A00F0529E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		AAF2158F20B6079B00F0529E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAF2159220B6079B00F0529E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAF2159420B6079B00F0529E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D527C21FB76F7641CC3D217C /* Pods-PerkinsHacks_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerkinsHacks_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PerkinsHacks_iOS/Pods-PerkinsHacks_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		D9CC4397E74B090B4B1DF88E /* Pods_PerkinsHacks_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PerkinsHacks_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97BA5F13CD3C91B74FADDB7E /* Pods_PerkinsHacks_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		479F68F2A358253D13694FCC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F74E886B7FAB66F4AAAB7F2 /* Pods-PerkinsHacks_iOS.debug.xcconfig */,
+				D527C21FB76F7641CC3D217C /* Pods-PerkinsHacks_iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		691EFC9ADD216BF115818543 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9CC4397E74B090B4B1DF88E /* Pods_PerkinsHacks_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AAF2157920B6079A00F0529E = {
 			isa = PBXGroup;
 			children = (
 				AAF2158420B6079A00F0529E /* PerkinsHacks_iOS */,
 				AAF2158320B6079A00F0529E /* Products */,
+				479F68F2A358253D13694FCC /* Pods */,
+				691EFC9ADD216BF115818543 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AAF2159720B6079B00F0529E /* Build configuration list for PBXNativeTarget "PerkinsHacks_iOS" */;
 			buildPhases = (
+				FEFD2A12B2AE9191ADC26FB8 /* [CP] Check Pods Manifest.lock */,
 				AAF2157E20B6079A00F0529E /* Sources */,
 				AAF2157F20B6079A00F0529E /* Frameworks */,
 				AAF2158020B6079A00F0529E /* Resources */,
+				7B0EEDD337DE3D14F027F674 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -99,6 +125,7 @@
 				TargetAttributes = {
 					AAF2158120B6079A00F0529E = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -132,6 +159,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B0EEDD337DE3D14F027F674 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PerkinsHacks_iOS/Pods-PerkinsHacks_iOS-frameworks.sh",
+				"${PODS_ROOT}/Clarifai-Apple-SDK/Clarifai_Apple_SDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Clarifai_Apple_SDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PerkinsHacks_iOS/Pods-PerkinsHacks_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEFD2A12B2AE9191ADC26FB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PerkinsHacks_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AAF2157E20B6079A00F0529E /* Sources */ = {
@@ -282,6 +348,7 @@
 		};
 		AAF2159820B6079B00F0529E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F74E886B7FAB66F4AAAB7F2 /* Pods-PerkinsHacks_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -293,13 +360,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "oar.PerkinsHacks-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		AAF2159920B6079B00F0529E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D527C21FB76F7641CC3D217C /* Pods-PerkinsHacks_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -311,7 +379,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "oar.PerkinsHacks-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

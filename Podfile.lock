@@ -1,0 +1,16 @@
+PODS:
+  - Clarifai-Apple-SDK (3.0.0-beta17)
+
+DEPENDENCIES:
+  - Clarifai-Apple-SDK (= 3.0.0-beta17)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Clarifai-Apple-SDK
+
+SPEC CHECKSUMS:
+  Clarifai-Apple-SDK: 9727181c1cac07e76e6f7368ac94bde425b8f827
+
+PODFILE CHECKSUM: bcf2e9e730d9ef22563caf377495dc1acfcf02e5
+
+COCOAPODS: 1.5.0
